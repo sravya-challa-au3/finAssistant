@@ -6,8 +6,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 32vh;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input[type="text"] {
+  width: 20vw;
+  height: 3vh;
+  border-radius: 6px;
+  outline: none;
+  border: solid 1px black;
+}
+
+button.submitBtn {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  width: 7vw;
+  height: 3vh;
+  font-size: 14px;
 }

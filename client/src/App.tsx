@@ -11,8 +11,6 @@ function App() {
   
   return (
     <div className="App">
-      <header className="App-header">
-       <h3> Finance Assistant </h3>
        <Router>
         <Routes>
           <Route path='/' element={isLoggedIn ? <Navigate to="/home" /> : <Login />} />             
@@ -21,7 +19,6 @@ function App() {
         </Routes>
        </Router>
       
-      </header>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import cors from "cors";
 import "dotenv/config";
 import {pool} from "./db.js";
 import authRouter from "./routes/auth.js";
+import finRouter from "./routes/finData.js";
 
 const app = express()
 
@@ -16,6 +17,7 @@ app.use((req, res, next) => {
 
 // Auth routes
 app.use("/api/auth", authRouter);
+app.use("/api/finance", finRouter);
 
 // DB check
 app.get('/db/ping', (_, res) => {
